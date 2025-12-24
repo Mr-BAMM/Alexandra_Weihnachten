@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Motivation</title>
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="header">
+      <h1>Thoughts that hopfully make you happy! >:D</h1>
+      <div class="time" id="time" aria-live="polite"></div>
+    </div>
+
+    <figure class="hero" id="hero" aria-hidden="true">
+      <div id="heroMedia"></div>
+      <figcaption id="heroCaption" class="hidden"></figcaption>
+    </figure>
+
+    <section class="content">
+      <blockquote class="quote" id="quote" aria-live="polite"></blockquote>
+      <div class="author" id="author"></div>
+    </section>
+
+    <!-- Footer ohne sichtbare Buttons -->
+    <div class="footer">
+      <div class="row">
+        <!-- Unsichtbare Platzhalter, damit vorhandenes JS nicht crasht -->
+        <div id="btn-copy" hidden></div>
+        <div id="btn-next" hidden></div>
+        <span class="muted" id="status" hidden></span>
+      </div>
+
+  </main>
+    </div>
+        <div class="seal">
+      <img src="./assets/img/Siegel1.png" alt="Siegel" loading="lazy" decoding="async" />
+    </div>
+  <!-- Kein Siegel-Element mehr -->
+
+  <script type="module">
+    import { initApp } from './js/app.js';
+    initApp();
+  </script>
+</body>
+</html>
